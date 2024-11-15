@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/styleoct.min.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134358512-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag("js", new Date());
+          gtag("config", "UA-134358512-1");
+        </script>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+            <link rel="icon" href="favicon.ico" type="image/x-icon">
+            <title>OnlineCamScanner | Online Document Photo Scanner, Convert to pdf, Edit, Rotate, Flip, Crop, Remove Background</title>
+	<link rel="canonical" href="https://onlinecamscanner.com/-0A.html" />
+            <meta name="description" content="OnlineCamScanner, Convert your document photos into scanned document pdf, remove gray background, image to pdf converter, jpg to pdf, png to pdf" />
+            <meta property="og:image" content="images/onlinecamscanner.jpg" />
+            <meta property="og:image:width" content="1080" />
+            <meta property="og:image:height" content="1733" />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="OnlineCamScanner | Convert your document photos into scanned document pdf, remove gray background, image to pdf converter, jpg to pdf, png to pdf" />
+            <meta property="og:description" content="OnlineCamScanner, Convert your document photos into scanned document pdf, remove gray background, image to pdf converter, jpg to pdf, png to pdf" />
+            <meta property="og:url" content="https://onlinecamscanner.com/" />
+            <meta property="og:site_name" content="OnlineCamScanner.com" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="OnlineCamScanner | Convert your document photos into scanned document pdf, remove gray background, image to pdf converter, jpg to pdf, png to pdf" />
+            <meta name="twitter:description" content="OnlineCamScanner, Convert your document photos into scanned document pdf, remove gray background, image to pdf converter, jpg to pdf, png to pdf" />
+            <meta name="twitter:image" content="images/onlinecamscanner.jpg" />
+            <meta name="twitter:image:width" content="1080" />
+            <meta name="twitter:image:height" content="1733" />
+                    </head>
+    <body >
+    <div class="nav-wrapper">
+            <nav class="navbar">
+            <a href="index.html">                <img src="images/onlinecamscanner.svg" alt="OnlineCamScanner Logo">
+                <span>OnlineCamScanner</span>
+            </a>
+            <ul class="nav" id="nav">
+                <li class="nav-item"></li>                
+                <li class="nav-item">
+                  <button id="newDocument">
+                    <img src="images/new1.svg" alt="New Document">
+                    New Document                  </button>
+                </li>
+                <li class="nav-item">
+                  <button id="langSelectBtn">
+                    <img src="images/globe.svg" alt="English">
+                    English                  </button>
+                </li>
+                <li class="nav-item">
+                    <button id="share">
+                        <img src="images/share.svg" alt="Share">
+                        Share                    </button>
+                </li>
+                <li class="nav-item">
+                    <a href="ocr-sub/index.html">
+                        <img src="images/ocr.svg" style="height:18px">
+                        OCR
+                    </button>
+                </li>
+                <li class="nav-item"><a href="camscanner-online.html">Old Version</a></li>
+            </ul>
+            </nav>
+        </div> 
+    </div>
+<div class="ad-left">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- camleftvertical -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-7614241663497500"
+      data-ad-slot="7114877619"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+<section class="scanner">
+<!-- ---------------- Bottom Tool Bar -------------------------- -->
+    <div id="pageSort"></div>
+    <div class="slidecontainer" id="adjustMenu">
+        <input type="range" min="0" max="200" value="100" class="slider brightness" id="brightness">        
+        <input type="range" min="0" max="200" value="100" class="slider contrast" id="contrast">
+        <input type="range" min="0" max="200" value="100" class="slider color" id="saturate">
+        <button id="resetBtn" title="Reset">
+          <img src="images/reset.svg" alt="reset">
+        </button>
+    </div>
+    <div class='menu' id='menu1'>
+      <div class='menuBtn' id="backBtn" title="Back">
+          <img src="images/back.svg" alt="Back">
+          <span>Back</span>
+      </div>
+      <div class='menuBtn' id="rotateBtn1" title="Rotate">
+        <img src="images/rotate.svg" alt="Rotate">
+        <span>Rotate</span>
+      </div>
+      <div class='menuBtn' id="adjBtn1" title="Adjust">
+        <img src="images/adjust.svg" alt="Adjust">
+        <span>Adjust</span>
+      </div>
+      <div class='menuBtn' id="zoom1" title="Zoom">
+          <img id="zoom1Img" src="images/zoomp.svg" alt="Zoom">
+          <span>Zoom</span>
+      </div>
+      <div class='menuBtn' id="fitBtn">
+        <img src="images/fit.svg" id="fitBtnImg" alt="Fit">
+        <span>Fit</span>
+      </div>
+      <div class='menuBtn' id="doneBtn" title="Crop">
+        <img src="images/correct.svg" alt="crop">
+        <span>Crop</span>
+      </div>
+    </div>
+    <!-------------------------- After Crop and Scan Tool Bar -------------------- -->
+    <div class='menu' id='menu2'>
+      <div class='menuBtn' id="addBtn" title="Add Page">
+          <img src="images/addfile.svg" alt="Add">
+          <span>Add</span>
+      </div>
+      <div class='menuBtn' id="deleteBtn" title="Delete Page">
+        <img src="images/delete.svg" alt="Delete">
+        <span>Delete</span>
+      </div>
+      <div class='menuBtn' id="zoom2" title="Zoom">
+        <img src="images/zoomp.svg" alt="Zoom" id="zoom2Img">
+        <span>Zoom</span>
+      </div>
+      <div class='menuBtn' id="rotateBtn2" title="Rotate">
+        <img src="images/rotate.svg" alt="Rotate">
+        <span>Rotate</span>
+      </div>
+      <div class='menuBtn' id="adjBtn" title="Adjust">
+        <img src="images/adjust.svg" alt="Adjust">
+        <span>Adjust</span>
+      </div>
+      <div class='menuBtn' id="effectBtn" title="Effects">
+        <img src="images/effects.svg" alt="Effects">
+        <span>Effects</span>
+      </div>
+      <div class='menuBtn' id="toolBtn" title="Tools">
+        <img src="images/tools.svg" alt="Tools">
+        <span>Tools</span>
+      </div>
+      <div class='menuBtn' id="setupBtn" title="Page Setup">
+        <img src="images/setup.svg" alt="Page Setup">
+        <span>Setup</span>
+      </div>
+      <div class='menuBtn' id="downloadBtn" title="Download">
+        <img src="images/download.svg" alt="Download">
+        <span>Download</span>
+      </div>
+    </div>
+    <div id='toolsMenu'>
+      <div class='menuBtn' id="highlighterBtn" title="Highlight Text">
+          <img src="images/highlighteryellow.svg" id="highlighterImg" alt="Highlighter">
+          <span>Highlighter</span>
+      </div>
+      <div class='menuBtn' id="penBtn" title="Pen">
+          <img src="images/penyellow.svg" id="penImg" alt="Pen">
+          <span>Pen</span>
+      </div>
+      <div class='menuBtn' id="eraserBtn" title="Eraser">
+          <img src="images/eraser.svg" alt="Eraser">
+          <span>Eraser</span>
+      </div>
+      <div class='menuBtn' id="repaintBtn" title="Repaint">
+          <img src="images/repaint.svg" alt="Repaint">
+          <span>Repaint</span>
+      </div>
+      <div class='menuBtn' title="Color" style="width:150%;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 450 120" style="enable-background:new 0 0 500 120;" xml:space="preserve">
+          <g>
+            <rect x="10" y="10" width="100" height="100" style="fill:#e3e300; stroke: black; stroke-width: 5" id="colory" />
+            <rect x="120" y="10" width="100" height="100" style="fill:#11f326; stroke: black;" id="colorg" />
+            <rect x="230" y="10" width="100" height="100" style="fill:#f31126; stroke: black;" id="colorr" />
+            <rect x="340" y="10" width="100" height="100" style="fill:#2196f3; stroke: black;" id="colorb" />
+          </g>
+        </svg>
+        <span>Color</span>
+      </div>
+      <div class='menuBtn' title="Size" style="width:150%;">          
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 768 200" style="enable-background:new 0 0 768 200;" xml:space="preserve">
+            <g>
+              <circle cx="75" cy="100" r="40" id="size1" class="selSVG" style="stroke-width: 5;"/>
+              <circle cx="231" cy="100" r="60" id="size2" class="selSVG"/>
+              <circle cx="417" cy="100" r="75" id="size3" class="selSVG"/>
+              <circle cx="643" cy="100" r="95" id="size4" class="selSVG"/>
+            </g>
+          </svg>
+          <span>Size</span>
+      </div>
+    </div>
+    <div id='downloadMenu'>
+      <div class='menuBtn' id="jpgBtn" title="Download as JPG">
+          <img src="images/jpg.svg" alt="JPG">
+          <span>JPG</span>
+      </div>
+      <div class='menuBtn' id="pngBtn" title="Download as PNG">
+          <img src="images/png.svg" alt="PNG">
+          <span>PNG</span>
+      </div>
+      <div class='menuBtn' id="pdfBtn" title="Download as PDF">
+          <img src="images/pdf.svg" alt="PDF">
+          <span>PDF</span>
+      </div>
+    </div>
+    <div id='effectsMenu'>
+      <div class='menuBtn' id="originalBtn">
+          <img src="images/original.svg" alt="Original">
+          <span>Original</span>
+      </div>
+      <div class='menuBtn' id="betterBtn">
+          <img src="images/better.svg" alt="Better">
+          <span>Better</span>
+      </div>
+      <div class='menuBtn btn-pressed' id="superBtn">
+          <img src="images/super.svg" alt="Super">
+          <span>Super</span>
+      </div>
+      <div class='menuBtn' id="simpleBtn">
+          <img src="images/simple.svg" alt="Simple">
+          <span>Simple</span>
+      </div>
+      <div class='menuBtn' id="bnwBtn">
+          <img src="images/bnw.svg" alt="B & W">
+          <span>B & W</span>
+      </div>
+    </div>
+    <!-- ---------------- Image Editor -------------------------- -->
+    <div class="imageHolder" id="editorHolder">      
+      <canvas class="image imageFit" id="editor"></canvas>
+        <div id="pageSel">
+          <button id="prev" style="left:30%">
+              <img src="images/prev.svg" alt="prev">
+          </button>
+          <span id="pageCnt">1/1</span>
+          <button id="next" style="right:50%">
+              <img src="images/next.svg" alt="next">
+          </button>
+        </div>
+    </div>
+    <div id="loader"> </div>
+    <!-- ---------------- File Loading Button -------------------------- -->
+    <div class="cameraBtn" id="fileLoadBtn">
+        <div title="Upload document image for scanning" class="file-input">
+            <input type="file" title="Gallery" name="file-input" id="file-input" class="file-input__input" accept="image/*"/>
+            <label class="file-input__label" for="file-input">
+                <img src="images/gallery.svg" alt="Gallery">
+                <span>Upload for Scan</span><span>(Add Page)</span>
+            </label>
+        </div>
+    </div>
+    <div class="otherTools" id="otherTools">
+      <div class="toolTitle">Other Tools</div>
+      <div style="display: inline-flex;">
+        <div style="text-align: center;">
+          <div class="file-input" title="Play Sudoku Online">
+              <a class="file-input__label" href="https://onlinesudoku.app/" target="_blank">
+                  <img src="images/sudoku.svg" alt="Online Sudoku">
+                  <span>Sudoku</span>
+              </a>
+          </div>
+          <div class="file-input" title="Play Piano Online">
+              <a class="file-input__label" href="https://onlinepiano.app/" target="_blank">
+                  <img src="images/piano.svg" alt="Online Piano">
+                  <span>Online Piano</span>
+              </a>
+          </div>
+          <div class="file-input" title="Unit Converter">
+            <a class="file-input__label" href="https://onlineheartbeat.com/" target="_blank">
+                <img src="images/heartbeat.png" alt="Unit Converter">
+                <span>Heart Monitor</span>
+            </a>
+          </div>
+          <div class="file-input" title="Online QR Scanner">
+            <a class="file-input__label" href="https://qrcode-generator.app/" target="_blank">
+                <img src="images/qr-code-scanner.svg" alt="QR Scan">
+                <span>QR Generator</span>
+            </a>
+          </div>
+          <!--div class="file-input" title="Multilanguage Speech to text">
+              <a class="file-input__label" href="https://speechtotext.me" target="_blank">
+                  <img src="/images/mic.svg" alt="Speech to Text">
+                  <span>Speech to text</span>
+              </a>
+          </div-->
+        </div>
+        <div style="text-align: center;">
+          <div class="file-input" title="Document Image to Editable Text converter">
+              <input type="file" name="camera-input" id="camera-input" class="file-input__input" accept="image/*" capture/>
+              <a class="file-input__label" href="ocr-sub/index.html" target="_blank">
+                  <img src="images/ocr.svg" alt="Document OCR">
+                  <span>Document OCR</span>
+              </a>
+          </div>
+          <div class="file-input" title="Play Chess Online">
+              <a class="file-input__label" href="https://onlinechess2.com/" target="_blank">
+                  <img src="images/chess.svg" alt="Online Chess">
+                  <span>Chess</span>
+              </a>
+          </div>
+          <div class="file-input" title="Resize Photo and Images Online">
+              <a class="file-input__label" href="https://imageresize2.com/" target="_blank">
+                  <img src="images/imageresize40.png" alt="Image Resize">
+                  <span>Image Resize</span>
+              </a>
+          </div>
+          <!--div class="file-input" title="Online Age Calculator">
+              <a class="file-input__label" href="https://agecalculator2.com/" target="_blank">
+                  <img src="/images/age-calculator.png" alt="Age Calculator">
+                  <span>Age Calculator</span>
+              </a>
+          </div-->
+          <div class="file-input" title="Online Fast File Transfer">
+              <a class="file-input__label" href="https://transfermyfile.com/" target="_blank">
+                  <img src="images/filetransfer.svg" alt="File Transfer">
+                  <span>Share Files</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------- Upper Tool Bar -------------------------- -->
+    <div class="upperToolBar">
+      <canvas height="100" width="100" id="preview"></canvas>
+    </div>
+</section>
+<div class="ad-right">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- camrightvertical -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-7614241663497500"
+      data-ad-slot="1730688992"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+<div class="ad">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- mcamscanner -->
+  <ins class="adsbygoogle"
+      style="display:block;max-width:100vw;height:60px"
+      data-ad-client="ca-pub-7614241663497500"
+      data-ad-slot="8082291613"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+<div class="cd-popup" id="pageSetupBox">
+  <input type="hidden" value="">
+	<div class="cd-popup-container">
+		<h3>Page Setup</h3>
+    <div>
+      <div class="left">Layout:</div>
+      <div class="right">
+        <select id="pageLayout">
+          <option value="portrait" selected>Portrait</option>
+          <option value="landscape">Landscape</option>
+        </select>
+      </div>
+      <div class="left">Page Size:</div>
+      <div class="right">
+        <select id="pageSize">
+          <option value="a0">A0</option>
+          <option value="a1">A1</option>
+          <option value="a2">A2</option>
+          <option value="a3">A3</option>
+          <option value="a4" selected>A4</option>
+          <option value="a5">A5</option>
+          <option value="legal">Legal</option>
+          <option value="letter">Letter</option>
+        </select>
+      </div>
+      <div class="left">Margins:</div>
+      <div class="right">
+        <select id="pageMargins">
+          <option value="default" selected>Default</option>
+          <option value="none">None</option>
+          <option value="customized">Customized</option>
+        </select>
+      </div>
+      <div class="left">Left:</div><div class="right"><input id="leftMargin" type="number" value="10" min="0" max="174" step="1"></input>mm</div>
+      <div class="left">Right:</div><div class="right"><input id="rightMargin" type="number" value="10" min="0" max="174" step="1"></input>mm</div>
+      <div class="left">Top:</div><div class="right"><input id="topMargin" type="number" value="10" min="0" max="262" step="1"></input>mm</div>
+      <div class="left">Bottom:</div><div class="right"><input id="bottomMargin" type="number" value="10" min="0" max="262" step="1"></input>mm</div>
+      <div><button onclick="pageSetupBox.classList.remove('is-visible')">Cancel</button><button onclick="savePageSettings()">Apply</button></div>
+    </div>
+		<a onclick="pageSetupBox.classList.remove('is-visible')" class="cd-popup-close img-replace"></a>
+	</div>
+</div>
+<div class="cd-popup" id="alertBox">
+  <input type="hidden" value="">
+	<div class="cd-popup-container">
+		<p></p>
+		<ul class="cd-buttons">
+			<li><a onclick="alertValue('yes')">Yes</a></li>
+			<li><a onclick="alertValue('no')">No</a></li>
+		</ul>
+		<a onclick="alertValue('close')" class="cd-popup-close img-replace"></a>
+	</div>
+</div>
+<div class="cd-popup" id="shareBox">  
+	<div class="cd-popup-container">
+		<p class="message">Liked this OnlineCamScanner?<br>Let your friends know about it.</p>
+		<ul class="share-buttons">
+			<li class="li"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonlinecamscanner.com" target="_blank" rel="noopener" class="btn"><img src="images/facebook.svg"></a></li>
+			<li class="li"><a href="-0A.html" data-action="share/whatsapp/share" target="_blank" class="btn"><img src="images/whatsapp.svg"></a></li>
+      <li class="li"><a href="https://twitter.com/intent/tweet?text=Online%20image%20to%20scanned%20pdf%20converter?&url=https%3A%2F%2Fonlinecamscanner.com&via=manoj" target="_blank" rel="noopener" class="btn"><img src="images/tweeter.svg"></a></li>
+			<li class="li"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fonlinecamscanner.com&title=Online%20photo%20to%20scanned%20pdf%20converter" target="_blank" rel="noopener" class="btn"><img src="images/linkedin.svg"></a></li>
+		</ul>
+		<a onclick="shareBox.classList.toggle('is-visible')" class="cd-popup-close img-replace"></a>
+	</div>
+</div>
+<div class="cd-popup" id="langSelect">  
+	<div class="cd-popup-container">
+    <div class="langBox">
+      <a href='index.html'><div class='lang selected'>English</div></a><a href='id.html'><div class='lang'>Bahasa Indonesia</div></a><a href='ms.html'><div class='lang'>Bahasa Malaysia</div></a><a href='da.html'><div class='lang'>Dansk</div></a><a href='de.html'><div class='lang'>Deutsch</div></a><a href='es.html'><div class='lang'>Español</div></a><a href='fr.html'><div class='lang'>Français</div></a><a href='it.html'><div class='lang'>Italiano</div></a><a href='nl.html'><div class='lang'>Nederlands</div></a><a href='nb.html'><div class='lang'>Norsk (bokmål)</div></a><a href='pl.html'><div class='lang'>Polski</div></a><a href='pt.html'><div class='lang'>Português</div></a><a href='sv.html'><div class='lang'>Svenska</div></a><a href='vi.html'><div class='lang'>Tiếng Việt</div></a><a href='tr.html'><div class='lang'>Türkçe</div></a><a href='ru.html'><div class='lang'>Русский</div></a><a href='uk.html'><div class='lang'>Українська</div></a><a href='index.html'><div class='lang'>العربية</div></a><a href='hi.html'><div class='lang'>हिन्दी</div></a><a href='th.html'><div class='lang'>ภาษาไทย</div></a><a href='ko.html'><div class='lang'>한국어</div></a><a href='ja.html'><div class='lang'>日本語</div></a><a href='zh-Hans.html'><div class='lang'>简体中文</div></a><a href='zh-Hant.html'><div class='lang'>繁體中文</div></a>    </div>
+		<a onclick="langSelect.classList.toggle('is-visible')" class="cd-popup-close img-replace"></a>
+	</div>
+</div>
+<section class="help">
+  <h1>How to use document photo scanner?</h1>
+    <p>
+    Document photos are scanned (removes gray backgound) in four steps
+    Uploading photo, cropping photo, further adjustments and download
+    </p>
+    <h2>Step1: Upload document photo</h2>
+      <div><img src="images/howto/select_document_photo.webp" loading="lazy" alt="Upload document photo"></div>
+      <div>
+        <ol>
+          <li>To upload photo from file click on gallary.</li>
+          <li>To take photo using camera click on camera button.</li>
+        </ol>
+      </div>
+    <h2>Step2:  Adjust and Crop document photo</h2>
+      After image upload OnlineCamScanner will show crop options.<br>
+      <img src="images/howto/crop.webp" loading="lazy" alt="Cropping document photo">
+        <ol>
+          <li><b>Setting Crop Area</b>
+          <p>After uploading document photo, OnlineCamScanner automatically detects the document corners in photo.<br> 
+          Adjust the corners which are not properly detected by moving circle presents on image.</p>
+          </li>
+          <li><b>Rotate</b><br>
+            <img src="images/howto/rotatebtn.webp" loading="lazy" alt="Rotate Button">
+            <p>To rotate document photo click on rotate button.</p>
+          </li>
+          <li><b>Adjust</b><br>
+            <img src="images/howto/adjustbtn.webp" loading="lazy" alt="Adjust Button">
+            <p>To Adjust brightness contrast for further improvement click on adjust. Adjustments can be done lazyer also, but making minor improvemenst improves scanning results.</p>
+            <img src="images/howto/adjust.webp" loading="lazy" alt="Adjust menu">
+          </li>
+          <li><b>Zoom</b><br>
+            <img src="images/howto/zoombtn.webp" loading="lazy" alt="Zoom Button">
+            <p>To see document clearly click on zoom button to zoom in and out. Use blue color scroll bars to scroll image.</p>
+            <img src="images/howto/zoom.webp" loading="lazy" alt="Zoom">
+          </li>
+          <li><b>Fit</b><br>
+            <img src="images/howto/fitbtn.webp" loading="lazy" alt="No Crop Button">
+            <p>If photo contains only document page and if you do not want to crop document photo click on fit button. To unfit click it again.</p>
+            <img src="images/howto/no_crop.webp" loading="lazy" alt="No Crop">
+          </li>
+          <li><b>Crop</b><br>
+            <img src="images/howto/cropbtn.webp" loading="lazy" alt="Crop Button">
+            <p>After all adjustment click on crop button.</p>        
+          </li>
+        </ol>
+    <h2>Step 3: Further improvements, Page setup, rearrange scanned pages and Download</h2>
+    <p>After cropping, Document photo is scanned and more options are provided to scan multiple document photos and rearrange pages, highlight text, page setup etc.</p>
+        <ol>
+          <li><b>Add Pages</b><br>
+            <img src="images/howto/addbtn.webp" loading="lazy" alt="Add Page Button">
+              <p>To add more pages in document for scanning press Add button.</p>
+          </li>
+          <li><b>Delete Page</b><br>
+            <img src="images/howto/deletebtn.webp" loading="lazy" alt="Delete Page Button">
+              <p>To delete page from document click on delete, It will delete current selected page.</p>
+          </li>
+          <li><b>Zoom</b><br>
+            <img src="images/howto/zoombtn.webp" loading="lazy" alt="Zoom Button">
+              <p>Zoom is useful to see document clearly when using highlighter, eraser, pen tools.</p>
+          </li>
+          <li><b>Scanning Effects</b><br>
+            <img src="images/howto/effectbtn.webp" loading="lazy" alt="Effects Button">
+              <p>To change scan effect click on effect button and selec effect.
+                Effects are applied to only selected page. Super scan effect is default and applied to all documents.</p>
+                <img src="images/howto/effect.webp" loading="lazy" alt="Effects">
+          </li>
+          <li><b>Tools</b><br>
+            <img src="images/howto/toolsbtn.webp" loading="lazy" alt="Tools Button">
+              <p>To highlight and remove text from scanned document, click on tools menu.</p>
+                <img src="images/howto/tools.webp" loading="lazy" alt="Tools">
+                <ol>
+                  <li>Use highlghter tool to highlight text in document.</li>
+                  <li>Use pen tool to draw on the document.</li>
+                  <li>four color selection is available for highlighter and pen.</li>
+                  <li>Size selections applied to highligter, pen, eraser and repaint tool.</li>
+                  <li>To remove text from document image, select erase tool.</li>
+                  <li>To get back removed, highighted text to original click on repaint tool.</li>
+                </ol>
+          </li>
+          <li><b>Page Setup</b><br>
+            <img src="images/howto/setupbtn.webp" loading="lazy" alt="Page Setup Button">
+              <p>click on page setup button to setup the output pdf page size, layout and margins.</p>
+                <img src="images/howto/page_setup.webp" loading="lazy" alt="Page Setup">
+          </li>
+          <li><b>Rearrange Pages</b><br>
+            <p>To change page sequence just drag the sidebar preview images.</p>
+            <img src="images/howto/page_rearrange.webp" loading="lazy" alt="Rearrange Pages">
+          </li>
+          <li><b>Download Scanned document</b><br>
+            <img src="images/howto/downloadbtn.webp" loading="lazy" alt="Download Button">
+            <p>Click on download button to download scanned document. Three download options are present. JPG, PNG and PDF. JPG and PNG will download current selected scanned page in image format.
+              Pdf download will download all scanned document pages and applies </p>
+            <img src="images/howto/download.webp" loading="lazy" alt="Download Options">
+          </li>
+        </ol></section>
+<script>
+  var yes = "Yes";
+  var no = "No";
+  var deleteAlert = "Are you sure you want to delete this page?";
+  var newAlert = "Are you sure, you want leave current scanning?";
+  var nopagesAlert = "No pages remain, Start New Scan.";
+</script>
+<script src="js/jspdfv1.min.js"></script>
+<script src="js/compv2.js"></script>
+<footer class="site-footer">
+        <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h6>About</h6>
+            <p class="text-justify">onlinecamscanner.com is an initiative to provide help in office and academic work with the easy to use online camera document scanner tools. onlinecamscanner.com focuses on providing highly secure document scanner in a simple way.</p>
+          </div>
+          <div class="col-3">
+            <h6>Other Websites</h6>
+            <ul class="footer-links">
+              <li><a href="https://cm2feet.com/">cm2feet.com</a></li>
+              <li><a href="https://imageresize2.com/">imageresize2.com</a></li>
+              <li><a href="https://circuits4you.com/">circuits4you.com</a></li>
+              <li><a href="https://imageresize.me/">imageresize.me</a></li>
+              <li><a href="https://agecalculator2.com/">Age Calculator</a></li>
+              <li><a href="https://onlinepiano1.com/">Online Piano</a></li>
+              <li><a href="https://onlinecompass.app/">.</a></li>
+              <li><a href="https://onlinecompass2.com/">.</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h6>Quick Links</h6>
+  <ul class='footer-links'>
+    <li><a href='index.html'>Home</a></li>
+    <li><a href='policy.html'>Privacy Policy</a></li>
+    <li><a href='terms.html'>Terms of Service</a></li>
+    <li><a href='contact.html'>About Us</a></li>
+                </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <p class="copyright-text">Copyright © 2020 All Rights Reserved by onlinecamscanner.com            </p>
+          </div>
+          <div class="col-4">
+            <ul class="social-icons">
+              <li><a class="facebook" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonlinecamscanner.com"><svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" fill="#fff"></path> </svg></a></li>
+              <li><a class="twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=Online+photo+to+scanned+pdf+converter?&url=https%3A%2F%2Fonlinecamscanner.com&via=manoj"><svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" fill="#fff"></path> </svg></a></li>
+              <li><a class="pintrest" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fonlinecamscanner.com&amp;media=&amp;description=Online+photo+to+scanned+pdf+converter"><svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M256 597q0-108 37.5-203.5t103.5-166.5 152-123 185-78 202-26q158 0 294 66.5t221 193.5 85 287q0 96-19 188t-60 177-100 149.5-145 103-189 38.5q-68 0-135-32t-96-88q-10 39-28 112.5t-23.5 95-20.5 71-26 71-32 62.5-46 77.5-62 86.5l-14 5-9-10q-15-157-15-188 0-92 21.5-206.5t66.5-287.5 52-203q-32-65-32-169 0-83 52-156t132-73q61 0 95 40.5t34 102.5q0 66-44 191t-44 187q0 63 45 104.5t109 41.5q55 0 102-25t78.5-68 56-95 38-110.5 20-111 6.5-99.5q0-173-109.5-269.5t-285.5-96.5q-200 0-334 129.5t-134 328.5q0 44 12.5 85t27 65 27 45.5 12.5 30.5q0 28-15 73t-37 45q-2 0-17-3-51-15-90.5-56t-61-94.5-32.5-108-11-106.5z" fill="#fff"></path> </svg></a></li>
+              <li><a class="linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fonlinecamscanner.com&title=Online+photo+to+scanned+pdf+converter"><svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" fill="#fff"></path> </svg></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer> 
+</body>
+</html>
